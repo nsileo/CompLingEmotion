@@ -1,9 +1,7 @@
-import nltk.sentiment.vader
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
-nltk.download('vader_lexicon')
 import pandas
 import numpy as np
+
+
 
 from NRCLexPkg.nrclex import NRCLex
 
@@ -12,8 +10,9 @@ df = pandas.read_csv('mypersonality_final.csv',
 print(df.head())
 test = "This is bad news! I am hopeful to see how it turns out. I am anxious"
 test_bad = "This was not that badly good for me! i could not resist"
-analyzer = nltk.sentiment.vader.SentimentIntensityAnalyzer()
-print(analyzer.polarity_scores(test))
+test_emoticons = "0.0"
+
+
 
 no_emotion = 0
 for status_update in df["STATUS"]:
@@ -28,4 +27,7 @@ print(no_emotion / len(df["STATUS"]))
 emotions_object_test = NRCLex(test)
 print(emotions_object_test.raw_emotion_scores)
 
-print(analyzer.polarity_scores(test))
+
+print("\ntest_emoticons: ")
+emotions_object_test_emoticons = NRCLex(test_emoticons)
+print(emotions_object_test_emoticons.raw_emotion_scores)
