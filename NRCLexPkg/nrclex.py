@@ -8,24 +8,18 @@
 
 from textblob import TextBlob
 from collections import Counter
-import re
 
-def build_word_affect(self, contains_emoticons):
+
+def build_word_affect(self):
     # Build word affect function
     affect_list = []
     affect_dict = dict()
     affect_frequencies = Counter()
     lexicon_keys = self.lexicon.keys()
-
     for word in self.words:
         if word in lexicon_keys:
             affect_list.extend(self.lexicon[word])
             affect_dict.update({word: self.lexicon[word]})
-        #if emoticons found, add associated emotions
-        if (contains_emoticons) and (word in self.emoticons_lexicon_re.keys()):
-            affect_list.extend(self.emoticons_lexicon_re[word])
-            affect_dict.update({word: self.emoticons_lexicon_re[word]})
-
     for word in affect_list:
         affect_frequencies[word] += 1
     sum_values = sum(affect_frequencies.values())
@@ -48,68 +42,11 @@ def top_emotions(self):
             top_emotions.append((key, max_value))
     self.top_emotions = top_emotions
 
-#searches for emoticons in the each sentence and appends
-# the regex of emoticons to self.words
-def find_emoticons(self):
-    found_emoticons = False
-
-    for sentence in self.sentences:
-        list_of_expressions = sentence.split(' ')
-        for expression in list_of_expressions:
-        #check if a non-word expression in emoticons lexicon re
-            for emoti_expr in self.emoticons_lexicon_re:
-                if re.match(emoti_expr, expression) != None:
-                    self.words.append(emoti_expr)
-                    found_emoticons = True
-
-    return found_emoticons
-
 
 class NRCLex:
     """Lexicon source is (C) 2016 National Research Council Canada (NRC) and library is for research purposes only.  Source: http://sentiment.nrc.ca/lexicons-for-research/"""
-    #emoticons lexicon pre-survey, all emoticons show all emotions
-    #0.0 emoti is an exception since it is also a float 0.0
-    emoticons_lexicon = {
-        ':\({1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust', 'negative'],
-        ':\){1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-               'negative'],
-        ':\>{1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-               'negative'],
-        ':\<{1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                       'negative'],
-        ':(d|D){1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        ':(P|p){1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-               'negative'],
-        'x(d|D){1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        ':\*{1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        ':3{1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        ':\${1,100}': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        '\^.\^': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        '\<3': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        '\</3': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        '0.0': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
-        '0.o': ['anger', 'anticipation', 'fear', 'joy', 'positive', 'sadness', 'surprise', 'trust', 'disgust',
-                'negative'],
 
-    }
-
-    #create a dict with re emoticon expressions
-    emoticons_lexicon_re = {}
-    for emoti in emoticons_lexicon.keys():
-        emoti_expr = re.compile(emoti)
-        emoticons_lexicon_re[emoti_expr.pattern] = emoticons_lexicon[emoti]
-
-    lexicon = {
-                'abacus': ['trust'], 'abandon': ['fear', 'negative', 'sadness'],
+    lexicon = {'abacus': ['trust'], 'abandon': ['fear', 'negative', 'sadness'],
                'abandoned': ['anger', 'fear', 'negative', 'sadness'],
                'abandonment': ['anger', 'fear', 'negative', 'sadness', 'surprise'], 'abba': ['positive'],
                'abbot': ['trust'], 'abduction': ['fear', 'negative', 'sadness', 'surprise'], 'aberrant': ['negative'],
@@ -2935,8 +2872,7 @@ class NRCLex:
         blob = TextBlob(text)
         self.words = list(blob.words)
         self.sentences = list(blob.sentences)
-        contains_emoticons = find_emoticons(self)
-        build_word_affect(self, contains_emoticons)
+        build_word_affect(self)
         top_emotions(self)
 
     def append_text(self, text_add):
