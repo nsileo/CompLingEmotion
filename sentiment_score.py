@@ -1,6 +1,6 @@
 import pandas
 import numpy as np
-
+import punctuation_analyzer
 
 
 from NRCLexPkg.nrclex import NRCLex
@@ -11,7 +11,7 @@ print(df.head())
 test = "This is bad news! I am hopeful to see how it turns out. I am anxious"
 test_bad = "This was not that badly good for me! i could not resist"
 test_emoticons = "0.0"
-
+test_punctuation = "!!!?????!!! !!!"
 
 
 no_emotion = 0
@@ -31,3 +31,7 @@ print(emotions_object_test.raw_emotion_scores)
 print("\ntest_emoticons: ")
 emotions_object_test_emoticons = NRCLex(test_emoticons)
 print(emotions_object_test_emoticons.raw_emotion_scores)
+
+print("\ntest_punctuations: ")
+number_of_question = punctuation_analyzer.find_punctuations(test_punctuation, "!")
+print(number_of_question)
