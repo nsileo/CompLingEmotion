@@ -35,3 +35,7 @@ print(emotions_object_test_emoticons.raw_emotion_scores)
 print("\ntest_punctuations: ")
 number_of_question = punctuation_analyzer.find_punctuations(test_punctuation, "!")
 print(number_of_question)
+
+print("\ntest_punctuations (all): ")
+puncts = punctuation_analyzer.find_all_punctuations(test_punctuation)
+print(list(puncts.items()))
