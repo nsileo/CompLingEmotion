@@ -22,6 +22,7 @@ for status_update in df["STATUS"]:
     if len(emotions_object.raw_emotion_scores) == 0:
         no_emotion += 1
 
+
 print(no_emotion / len(df["STATUS"]))
 
 emotions_object_test = NRCLex(test)
