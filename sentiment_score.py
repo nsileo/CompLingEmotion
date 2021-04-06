@@ -1,11 +1,10 @@
-import pandas
-import numpy as np
+import pandas as pd
 
 
 
 from NRCLexPkg.nrclex import NRCLex
 
-df = pandas.read_csv('mypersonality_final.csv',
+df = pd.read_csv('mypersonality_final.csv',
                      header=0)
 #print(df.head())
 test = "This is bad news! I am hopeful to see how it turns out. I am anxious"
@@ -72,11 +71,22 @@ for status_update in df["STATUS"]:
             anticipation[-1] = (emotions_object.raw_emotion_scores[emo])
 
 
+data = df.iloc[:,[2,3,4,5,6]]
+data = data.assign(positive = positive)
+data = data.assign(negative = negative)
+data = data.assign(joy = joy)
+data = data.assign(sadness = sadness)
+data = data.assign(fear = fear)
+data = data.assign(disgust = disgust)
+data = data.assign(anticipation = anticipation)
+print(data.tail())
 
+data.to_csv('continous_outcome.csv')
 
 print(no_emotion / len(df["STATUS"]))
-print(len(fear))
-print(positive[0:10])
+
+#print(len(fear))
+#print(positive[0:10])
 #emotions_object_test = NRCLex(test)
 #print(emotions_object_test.raw_emotion_scores)
 
