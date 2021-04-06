@@ -81,7 +81,7 @@ data = data.assign(disgust = disgust)
 data = data.assign(anticipation = anticipation)
 print(data.tail())
 
-data.to_csv('continous_outcome.csv')
+data.to_csv('continuous_outcome.csv')
 
 print(no_emotion / len(df["STATUS"]))
 
