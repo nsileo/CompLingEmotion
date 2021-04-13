@@ -1,8 +1,7 @@
 import pandas as pd
+import punctuation_analyzer
 
-
-
-from NRCLexPkg.nrclex import NRCLex
+from NRCLexPkg.nrclex_base import NRCLex
 
 df = pd.read_csv('mypersonality_final.csv',
                      header=0)
@@ -22,6 +21,7 @@ disgust =list()
 anticipation = list()
 surprise = list()
 punctuation = list()
+sum_emotions = list()
 
 noEmotes = []
 no_emotion = 0
@@ -40,38 +40,48 @@ for status_update in df["STATUS"]:
     anticipation.append(0)
     surprise.append(0)
     punctuation.append(0)
+    sum_emotions.append(0)
     for emo in ["positive","negative", "sadness","joy","fear","surprise","disgust", "anticipation"]:
-        if ( emo in emotions_object.raw_emotion_scores.keys() and emo =="positive"):
+        if (emo in emotions_object.raw_emotion_scores.keys() and emo =="positive"):
             positive[-1] = (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
         if ( emo == 'negative' and emo in emotions_object.raw_emotion_scores.keys()):
             negative[-1] = (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
         if ( emo == 'joy' and emo in emotions_object.raw_emotion_scores.keys()):
             joy[-1] = (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
 
         if ( emo == 'sadness' and emo in emotions_object.raw_emotion_scores.keys()):
             sadness[-1]= (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
         if ( emo == 'fear' and emo in emotions_object.raw_emotion_scores.keys()):
             fear[-1] = (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
         if ( emo == 'disgust' and emo in emotions_object.raw_emotion_scores.keys()):
             disgust[-1] = (emotions_object.raw_emotion_scores[emo])
-
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
 
 
         if ( emo == 'anticipation' and emo in emotions_object.raw_emotion_scores.keys()):
             anticipation[-1] = (emotions_object.raw_emotion_scores[emo])
+            sum_emotions[-1] +=(emotions_object.raw_emotion_scores[emo])
+
+    #create punctuation predictor
+    question = punctuation_analyzer.find_punctuations(status_update, '?')
+    exclamation = punctuation_analyzer.find_punctuations(status_update, '!')
+    #period = punctuation_analyzer.find_punctuations(status_update, '.')
+    qu_ex_sum = question + exclamation
+    if qu_ex_sum != 0 :
+        punctuation[-1] = qu_ex_sum
 
 
-data = df.iloc[:,[2,3,4,5,6]]
+data = df.iloc[:,[0,2,3,4,5,6,13]]
 data = data.assign(positive = positive)
 data = data.assign(negative = negative)
 data = data.assign(joy = joy)
@@ -79,18 +89,11 @@ data = data.assign(sadness = sadness)
 data = data.assign(fear = fear)
 data = data.assign(disgust = disgust)
 data = data.assign(anticipation = anticipation)
+data = data.assign(surprise = anticipation)
+data = data.assign(sum_emotions = sum_emotions)
+data = data.assign(punctuation = punctuation)
 print(data.tail())
 
-data.to_csv('continuous_outcome.csv')
+data.to_csv('continuous_outcome_base.csv')
 
-print(no_emotion / len(df["STATUS"]))
-
-#print(len(fear))
-#print(positive[0:10])
-#emotions_object_test = NRCLex(test)
-#print(emotions_object_test.raw_emotion_scores)
-
-
-#print("\ntest_emoticons: ")
-#emotions_object_test_emoticons = NRCLex(test_emoticons)
-#print(emotions_object_test_emoticons.raw_emotion_scores)
+print('Coverage:' , no_emotion / len(df["STATUS"]))
