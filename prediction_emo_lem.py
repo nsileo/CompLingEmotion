@@ -6,23 +6,6 @@ import sklearn.metrics as metrics
 import numpy as np
 import random
 
-#this function was created by Naomi Friedman
-def regression_results(y_true, y_pred):
-
-    # Regression metrics
-    explained_variance=metrics.explained_variance_score(y_true, y_pred)
-    mean_absolute_error=metrics.mean_absolute_error(y_true, y_pred)
-    mse=metrics.mean_squared_error(y_true, y_pred)
-    mean_squared_log_error=metrics.mean_squared_log_error(y_true, y_pred)
-    median_absolute_error=metrics.median_absolute_error(y_true, y_pred)
-    r2=metrics.r2_score(y_true, y_pred)
-
-    print('explained_variance: ', round(explained_variance,4))
-    print('mean_squared_log_error: ', round(mean_squared_log_error,4))
-    print('r2: ', round(r2,4))
-    print('MAE: ', round(mean_absolute_error,4))
-    print('MSE: ', round(mse,4))
-    print('RMSE: ', round(np.sqrt(mse),4))
 
 #generate predictions for nrclex with emoticons and lammatization (nrclex)
 data = pd.read_csv('continuous_outcome_emo_lem.csv',
@@ -51,9 +34,9 @@ for user in set(data["#AUTHID"]):
 
     print(i/2.5, " %")
     i+=1
-    #test_users = random.sample(set(data.iloc[:,1]), 1)
-    #print(test_users)
+
     data_test = data[data["#AUTHID"] == user]
+
     data_test = data_test.iloc[:, 2:17]
     covariates_test =  data_test.iloc[:,6:14]
 
@@ -63,7 +46,7 @@ for user in set(data["#AUTHID"]):
     data_train = data_train.iloc[:,2:17]
     covariates =  data_train.iloc[:,6:14]
     #print(covariates.head())
-    #covariates[covariates==0] = 0.1
+
 
 
 
@@ -104,12 +87,12 @@ for user in set(data["#AUTHID"]):
 
     class_error_neu.append(mean_score == np.mean(data_test['sNEU']))
 print('Class. Error Rates for NRCLex with emoticons and lemmatization: ')
-print('EXT: ', np.mean(class_error_ext))
-print('OPN: ',np.mean(class_error_opn))
-print('AGR: ',np.mean(class_error_agr))
-print('CON: ',np.mean(class_error_con))
-print('NEU: ', np.mean(class_error_neu))
+print('EXT: ', 1-np.mean(class_error_ext))
+print('OPN: ',1-np.mean(class_error_opn))
+print('AGR: ',1-np.mean(class_error_agr))
+print('CON: ',1-np.mean(class_error_con))
+print('NEU: ', 1-np.mean(class_error_neu))
 
 results_emo_lem = pd.DataFrame(zip(class_error_ext,class_error_con, class_error_agr,class_error_con,class_error_neu))
-results_emo_lem.to_csv('results_emo_lem.csv')
+results_emo_lem.to_csv('results_emo_lem_5.csv')
 
