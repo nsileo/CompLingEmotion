@@ -2866,6 +2866,8 @@ def lemmaAdder(dicToStem):
             stems[stem] = emotes
             #print(stem, ' added')     #Debug line
         
+        #TODO Average or vote or something
+        
         #Debug statements to see what types of stems are not being added and why
 #        else:
 #            if stem in stems:
@@ -2889,8 +2891,59 @@ combinedDict, stemsOnly = lemmaAdder(lexicon)
 
 #This prints ['positive'] since it stems to 'anim', which inherited its emotions from
 #the word 'animate'
-print(combinedDict[stemmer.stem('animation')])
+#print(combinedDict[stemmer.stem('animation')])
 
-newLex = {'anim': ['positive'], 'animos': ['anger', 'disgust', 'fear', 'negative', 'sadness'], 'annihil': ['anger', 'fear', 'negative'], 'announc': ['anticipation'], 'anomali': ['fear', 'negative', 'surprise'], 'anonym': ['negative'], 'answer': ['trust'], 'antagon': ['anger', 'negative'], 'antibiot': ['positive'], 'anticip': ['anticipation'], 'anticipatori': ['anticipation'], 'antidot': ['anticipation', 'positive', 'trust'], 'antifung': ['positive', 'trust'], 'anguish': ['anger', 'fear', 'negative', 'sadness'], 'animate': ['positive'], 'animated': ['joy', 'positive'], 'animosity': ['anger', 'disgust', 'fear', 'negative', 'sadness'], 'animus': ['anger', 'negative'], 'annihilate': ['anger', 'fear', 'negative'], 'annihilated': ['anger', 'fear', 'negative', 'sadness'], 'annihilation': ['anger', 'fear', 'negative', 'sadness'], 'announcement': ['anticipation'], 'annoy': ['anger', 'disgust', 'negative'], 'annoyance': ['anger', 'disgust', 'negative'], 'annoying': ['anger', 'negative'], 'annul': ['negative'], 'annulment': ['negative', 'sadness'], 'anomaly': ['fear', 'negative', 'surprise'], 'anonymous': ['negative'], 'answerable': ['trust'], 'antagonism': ['anger', 'negative'], 'antagonist': ['anger', 'negative'], 'antagonistic': ['anger', 'disgust', 'negative'], 'anthrax': ['disgust', 'fear', 'negative', 'sadness'], 'antibiotics': ['positive'], 'antichrist': ['anger', 'disgust', 'fear', 'negative'], 'anticipation': ['anticipation'], 'anticipatory': ['anticipation'], 'antidote': ['anticipation', 'positive', 'trust'], 'antifungal': ['positive', 'trust']}
-print(newLex)
+
+wrongs = 0
+rights = 0
+alone = 0
+partialMissing = 0
+partialWrong = 0
+partial = 0
+
+#Validation of our stemming
+for word in lexicon:
+    #Make lexicon without this word
+    exclude_keys = [word]
+    newLex = {k: lexicon[k] for k in set(list(lexicon.keys())) - set(exclude_keys)}
+
+
+    #stem
+    combNew, stemsNew = lemmaAdder(newLex)
+    
+    #Check what the word outputs when used now
+    #print('Word: ', word)
+    #print(lexicon[word])
+    if stemmer.stem(word) in combNew:
+        #print(combNew[stemmer.stem(word)])
+        #Check if stem in dict is same emotions as word
+        if combNew[stemmer.stem(word)] == lexicon[word]:
+            rights += 1
+        else:
+            #Not completely right, but check if partial match
+            a = combNew[stemmer.stem(word)]
+            b = lexicon[word]
+            if not set(a).isdisjoint(b):
+                #Shares some elements in common
+                #partial += 1
+                if set(a).issubset(b):
+                    #Stripped away emotions that it was supposed to have
+                    partialMissing += 1
+                else:
+                    #Inherited new, wrong emotions it shouldn't have
+                    partialWrong += 1
+            else:
+                #Has no matching emotions
+                wrongs += 1
+    else:
+        #print(word, " not in stemmed dict")
+        #Was only word in dict that stemmed to this stem
+        alone += 1
+        
+tot = wrongs + rights + alone + partialMissing + partialWrong
+print('Correct: ', rights/tot)
+print('Partially Correct (Wrong Added): ', partialWrong/tot)
+print('Partially Correct (Missing Some): ', partialMissing/tot)
+print('Wrong: ', wrongs/tot)
+print('Only Stems of Type: ', alone/tot)
 
