@@ -34,12 +34,19 @@ def build_word_affect(self, contains_emoticons):
     lexicon_keys = self.lexicon.keys()
 
     stemmer = SnowballStemmer("english")  # Make stemmer
-
+    
+    prevWordNeg = 0
     for word in self.words:
-        word_previous = self.words[word.]
+        #Skip words if negation was earlier
+        if prevWordNeg == 1:
+            prevWordNeg += 1
+            continue
+        elif prevWordNeg == 2:
+            prevWordNeg = 0
+            continue
+        
         if word in lexicon_keys:
             # Word is in lexicon dict
-
             affect_list.extend(self.lexicon[word])
             affect_dict.update({word: self.lexicon[word]})
         elif stemmer.stem(word) in self.stems_lexicon.keys():
@@ -50,7 +57,13 @@ def build_word_affect(self, contains_emoticons):
         if (contains_emoticons) and (word in self.emoticons_lexicon_re.keys()):
             affect_list.extend(self.emoticons_lexicon_re[word])
             affect_dict.update({word: self.emoticons_lexicon_re[word]})
-
+        
+        if word in NEGATE:
+            #Word is a negation word
+            #Ignore next two
+            prevWordNeg = 1
+            
+            
 
     for word in affect_list:
         affect_frequencies[word] += 1
