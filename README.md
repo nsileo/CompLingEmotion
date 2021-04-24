@@ -1,7 +1,7 @@
 # CompLingEmotion
 CompLing Group Project
 
-In the NRCLex package, you will find 4 nrclex_ files. Each file is a extra improvement ot nrclex base. 
+In the NRCLex package, you will find 4 nrclex_ files. Each file is an extra improvement ot nrclex base. 
 
 To create a dataset with of the improvements, refer to the sentiment_score_ file with chosen improvemnt. 
 For example, sentiment_score_emo_lem.py creates a dataset with NRC Lex with emoticons and lemmatization based on mypersonality_final.csv .
