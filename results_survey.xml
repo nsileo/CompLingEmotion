@@ -1,0 +1,2645 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Microsoft Office User</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2021-03-31T09:23:45Z</Created>
+  <LastSaved>2021-03-31T10:29:26Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>16700</WindowHeight>
+  <WindowWidth>28040</WindowWidth>
+  <WindowTopX>380</WindowTopX>
+  <WindowTopY>500</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="0"/>
+  </Style>
+  <Style ss:ID="s63">
+   <NumberFormat ss:Format="Scientific"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="results">
+  <Names>
+   <NamedRange ss:Name="results" ss:RefersTo="=results!R1C1:R161C4"/>
+   <NamedRange ss:Name="results_pvalues" ss:RefersTo="=results!R1C6:R161C8"/>
+   <NamedRange ss:Name="results_pvalues_1" ss:RefersTo="=results!R1C10:R161C12"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="162" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Column ss:Width="25"/>
+   <Column ss:Width="83"/>
+   <Column ss:Width="125"/>
+   <Column ss:Width="113"/>
+   <Column ss:Width="125"/>
+   <Column ss:AutoFitWidth="0" ss:Width="101"/>
+   <Column ss:Width="83"/>
+   <Column ss:Index="10" ss:Width="25"/>
+   <Column ss:Width="83"/>
+   <Column ss:Index="14" ss:Width="73"/>
+   <Row>
+    <Cell ss:Index="2"><Data ss:Type="String">emoti_emotion</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">conf_int_lower</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">conf_int_upper</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">p_value</Data></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">p_value</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.922938172948099</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">1.4210854715202e-14</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.05,RC[-1],&quot;&quot;)"><Data
+      ss:Type="String">positive</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.4210854715202001E-14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000550235694880711</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.11527182559799</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999986</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999998601</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.88472817440201</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999449764305119</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">6.67910171614497e-13</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">6.67910171614497E-13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000550235694880711</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.11527182559799</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999986</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999998601</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0770618270519007</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0770618270519007</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.232065718799944</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.524515482590837</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.972961984070565</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.972961984070565</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">;D 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.2699745778107</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.567727592437981</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.908037589311505</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.90803758931150502</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0725192636642774</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">10</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.927480736335723</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">1.77635683940025e-15</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.7763568394002501E-15</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">11</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0725192636642774</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">12</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.927480736335723</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">1.77635683940025e-15</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">sadness</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.7763568394002501E-15</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">13</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.149470728720768</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.41081714115642</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999765121340996</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99976512134099604</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">14</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0339717049839558</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.222276696282627</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999999588727</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999958872698</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">15</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000516556497593287</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.108541763968407</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999998</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.999999999999998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">16</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:(( 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0049818418349713</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.139787187022464</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999911</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999991096</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">17</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.932765453693699</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">1.11022302462516e-16</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.11022302462516E-16</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">18</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000477580412422113</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.100701526769146</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">19</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.899298473230854</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999522419587578</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">5.99520433297587e-15</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">5.9952043329758698E-15</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">20</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0118287188591336</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.156629462172375</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999841</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999984102</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">21</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000477580412422113</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.100701526769146</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">22</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0672345463063011</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">23</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0118287188591336</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.156629462172375</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999841</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999984102</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">24</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:) 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0426963949362737</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.230289916370863</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999646131</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999964613095</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">25</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.773422338716236</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.965301877878804</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">6.84024215047432e-09</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">6.8402421504743201E-9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">26</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0472837604211795</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.252460508641953</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999993159758</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999315975796</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">27</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.722361659977972</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.939295530633363</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">3.12020421944227e-07</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">3.1202042194422702E-7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">28</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.023173495136761</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.199828014199381</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999934371</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999993437105</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">29</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.023173495136761</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.199828014199381</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999999934371</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999993437105</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">30</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.023173495136761</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.199828014199381</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999934371</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999993437105</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">31</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0472837604211795</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.252460508641953</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999993159758</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999315975796</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">32</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:)) 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.104690683032906</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.349910240257327</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999992389086945</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999238908694499</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">33</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.451015770301551</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.729940260408311</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.105804284380758</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.10580428438075801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">34</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0823256854420929</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.303280106103133</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999798033913</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999979803391303</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">35</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.394698229111857</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.677689681826402</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.338904319571231</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.33890431957123102</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">36</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0435412039886871</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.234408322505105</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999357589</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999935758899</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">37</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0120593180267384</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.159473358638591</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999694</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999969402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">38</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0213565864913837</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.185396604383411</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999994787</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999478695</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">39</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0823256854420929</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.303280106103133</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999798033913</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999979803391303</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">40</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:* 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0688392343783091</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.280811084063291</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999965130949</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999996513094902</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">41</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0787051004068431</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">42</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.604629071240173</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.871177185396492</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.000412041179799873</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">4.12041179799873E-4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">43</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0787051004068431</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">44</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.316600822997424</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.621279983912536</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.72425783509874</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.72425783509873998</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">45</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0800179574573061</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.32053424339337</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999998439345177</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999843934517696</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">46</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.237678244727798</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.534589887353627</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.963772869918728</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.96377286991872801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">47</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0247529577834691</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.21221173695434</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999567251</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999956725105</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">48</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:/ 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00542848870025095</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.151492900243339</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999998693</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999869305</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">49</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00052731525342312</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.110696160593152</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999996</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.999999999999996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">50</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.49456825543663</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.778394067088166</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0297316876268852</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">2.97316876268852E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">51</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0739727853472802</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">52</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.169530798628029</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.440634779913691</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998955946333002</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.998955946333002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">53</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.023173495136761</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.199828014199381</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999934371</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999993437105</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">54</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.257698972846409</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.54730419908932</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.944298554469491</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.94429855446949096</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">55</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0130792444095527</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.17195993079057</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999995818</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999581801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">56</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:| 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00052731525342312</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.110696160593152</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999996</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.999999999999996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">57</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.114733513938596</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.37844294756552</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999946977666866</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99994697766686602</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">58</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.167643981228676</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.452021848084055</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998171116586036</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99817111658603597</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">59</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0142876684269754</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.186562010072022</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999943668</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999994366795</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">60</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0517308294862735</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.273506890903824</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999929741875</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999992974187502</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">61</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0819188408807036</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.327136850246246</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999997350209128</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999735020912806</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">62</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.167643981228676</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.452021848084055</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998171116586036</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99817111658603597</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">63</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.131927437933647</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.403380407735859</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999805934548533</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99980593454853295</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">64</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:$ 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.167643981228676</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.452021848084055</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998171116586036</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99817111658603597</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">65</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.789702528060675</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.968035763623078</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">6.42411457363321e-10</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">6.42411457363321E-10</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">66</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0120593180267384</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.159473358638591</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999694</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999969402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">67</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.719188915936709</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.931160765621691</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2.01966086965655e-07</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">2.0196608696565501E-7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">68</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00469228900927086</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.132128407276803</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999988</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999998801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">69</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00469228900927086</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.132128407276803</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999999999988</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999998801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">70</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0120593180267384</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.159473358638591</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999694</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999969402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">71</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0435412039886871</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.234408322505105</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999357589</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999935758899</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">72</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:3 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.219657902213823</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.490856079463503</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.991233382350458</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99123338235045799</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">73</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.930222969250461</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">4.44089209850065e-16</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">4.4408920985006498E-16</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">74</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0697770307495387</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">75</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.930222969250461</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">4.44089209850065e-16</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">4.4408920985006498E-16</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">76</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0697770307495387</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">77</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0697770307495387</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">78</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0697770307495387</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">79</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.293454873840595</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.577546774192884</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.868781232144478</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.868781232144478</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">80</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:D 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.158927265386414</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.417447523049197</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999689478271886</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99968947827188603</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">81</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.668842648747071</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.901756583488401</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">7.36885794250245e-06</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">7.3688579425024498E-6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">82</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.652962393597846</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.889388489689143</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">1.7943958064759e-05</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.7943958064759001E-5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">83</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.021783562056269</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.188806006942538</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999999990163</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999016298</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">84</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.110611510310857</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.347037606402154</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999995468364042</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999546836404196</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">85</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.603665783055925</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.856737416240272</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.000310521728113856</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">3.1052172811385601E-4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">86</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.489558956311425</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.763756388957288</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0351971105335313</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">3.5197110533531299E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">87</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000496304407737771</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.104474896395517</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">88</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0120593180267384</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.159473358638591</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999694</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999969402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">89</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0697770307495387</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">90</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000486762415492083</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.102553544652118</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">91</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00478499269470729</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.134586491129664</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999977</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999997702</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">92</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0435412039886871</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.234408322505105</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999357589</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999935758899</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">93</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0570118134633688</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.262551543304546</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999990838186</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999083818603</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">94</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0319642363769217</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.210297471939325</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999934674</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999993467403</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">95</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:p 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0326064895518909</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.214144982545681</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999879185</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999987918498</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">96</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:P 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0120593180267384</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.159473358638591</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999694</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999969402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">97</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.548138854932161</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.857997552736598</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.00566549209179359</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">5.6654920917935904E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">98</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0311161399450152</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.260610920510829</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999886393198</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999988639319803</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">99</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.462209000168164</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.791777052913407</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0662490819813685</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">6.6249081981368502E-2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">100</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00680030065402282</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.186636706457554</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999461579</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999946157903</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">101</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.097393755914492</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">102</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0466776606030903</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.294974948110632</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999029212631</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999902921263095</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">103</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0466776606030903</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.294974948110632</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999029212631</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999902921263095</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">104</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">:pp 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0466776606030903</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.294974948110632</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999029212631</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999902921263095</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">105</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.86190097020758</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999333963795798</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">1.41881173476578e-10</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.4188117347657799E-10</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">106</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0925127614158783</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">107</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.86190097020758</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999333963795798</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">1.41881173476578e-10</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">1.4188117347657799E-10</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">108</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0925127614158783</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">109</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0925127614158783</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">110</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0925127614158783</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">111</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.19632909294905</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.513526755160664</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.983223780160188</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.98322378016018797</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">112</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">^.^ 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.175025338901127</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.486527054406022</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.993073517369339</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99307351736933902</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">113</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.01229908825524</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.16242221807205</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999411</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999941103</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">114</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.737448456695454</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.942988186536631</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">6.05762870975468e-08</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">6.0576287097546797E-8</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">115</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.01229908825524</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.16242221807205</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999411</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999941103</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">116</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.83757778192795</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.98770091174476</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">9.83746417659858e-12</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">sadness</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">9.8374641765985806E-12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">117</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.01229908825524</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.16242221807205</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999411</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999941103</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">118</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0982434165115987</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.331157351252929</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999998305586026</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999830558602598</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">119</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0570118134633688</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.262551543304546</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999990838186</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999083818603</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">120</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;/3 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.021783562056269</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.188806006942538</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999990163</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999016298</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">121</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.8870622828536</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999461468294658</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">3.41060513164848e-13</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">3.4106051316484799E-13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">122</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0754857336910586</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">123</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.854594754511786</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.994804416823256</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">8.02202748673157e-12</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">8.0220274867315699E-12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">124</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000538531705342315</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.1129377171464</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999993</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999999301</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">125</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0754857336910586</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">126</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0754857336910586</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">127</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00519558317674383</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.145405245488214</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999659</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999965905</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">128</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">&lt;3 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0620441181219981</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.283057534243297</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999911415067</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999991141506706</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">129</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0398055289426884</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.256316677606378</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999971734269</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999997173426902</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">130</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0860055944559322</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.341184413604157</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999992451399521</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999245139952098</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">131</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00581982483550999</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.161641959691654</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999990223</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999022304</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">132</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.01497969167071</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.194831198156491</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999794454</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999979445398</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">133</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.364177970921333</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.679959491139774</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.438807164376158</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.43880716437615802</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">134</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0542838583787648</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.285393841913271</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999778314759</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999977831475895</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">135</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.805168801843509</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.98502030832929</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">2.815795596689e-09</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">2.8157955966889999E-9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">136</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.0 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.195668048036518</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.495487464263231</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.99023976360877</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99023976360876997</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">137</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0875903353128473</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.320221214428869</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999017673112</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999901767311195</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">138</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.182519447645874</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.454152436505246</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998099172795126</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99809917279512606</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">139</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0339717049839558</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.222276696282627</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999588727</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999958872698</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">140</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0049818418349713</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.139787187022464</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999911</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999991096</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">141</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.182519447645874</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.454152436505246</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.998099172795126</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99809917279512606</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">142</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.133428710842294</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.388695914688434</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.9999290146574</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99992901465740003</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">143</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.679778785571131</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.912409664687153</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">4.63177320497722e-06</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">4.6317732049772203E-6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">144</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.o 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.165841791654581</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.432629719646494</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999298655748152</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99929865574815202</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">145</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.353264230322006</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.745201193368262</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.350554019212723</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.350554019212723</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">146</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 1</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.874341442825008</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.999397376698396</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">9.77706804405902e-12</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">positive</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">9.7770680440590206E-12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">147</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.137526553940579</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.501813666370001</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.99042135477066</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99042135477065996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">148</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 2</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000602623301603575</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.125658557174992</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">0.999999999999773</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">negative</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999977296</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">149</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.353264230322006</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.745201193368262</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.350554019212723</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.350554019212723</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">150</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 3</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.805168801843509</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.98502030832929</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">2.815795596689e-09</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">significant</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">joy</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String">joy</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14" ss:StyleID="s63"><Data ss:Type="Number">2.8157955966889999E-9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">151</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0418873964737673</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.337310864024244</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999975383281708</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99997538328170799</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">152</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 4</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">0</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0840838549403552</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">sadness</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">153</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00910007294230628</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.242898346845627</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999791383743</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999979138374295</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">154</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 5</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000602623301603575</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.125658557174992</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999773</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">fear</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999977296</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">155</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.023527454380854</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.291586924273552</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999997176229954</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999717622995399</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">156</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 6</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.000602623301603575</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.125658557174992</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999999999773</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">disgust</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999999999977296</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">157</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.111144562845442</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.462848742276171</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.997037693858147</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.997037693858147</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">158</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 7</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.256290925483658</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.567179109279963</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.917925299108446</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">surprise</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.917925299108446</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">159</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xd 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.00910007294230628</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.242898346845627</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999999791383743</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999979138374295</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">160</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">xD 8</Data><NamedCell ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.0860055944559322</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">0.341184413604157</Data><NamedCell
+      ss:Name="results"/></Cell>
+    <Cell><Data ss:Type="String">0.999992451399521</Data></Cell>
+    <Cell ss:Formula="=IF(RC[8]&lt;0.05,&quot;significant&quot;,&quot;not&quot;)"><Data
+      ss:Type="String">not</Data><NamedCell ss:Name="results_pvalues"/></Cell>
+    <Cell><Data ss:Type="String">anticipation</Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Formula="=IF(RC[6]&lt;0.1,RC[-1],&quot;&quot;)"><Data ss:Type="String"></Data><NamedCell
+      ss:Name="results_pvalues"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="Number">0.99999245139952098</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="6" ss:Formula="=COUNTIF(R[-161]C:R[-1]C,&quot;significant&quot;)"><Data
+      ss:Type="Number">29</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <QueryTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>results_pvalues_1</Name>
+   <AutoFormatFont/>
+   <AutoFormatPattern/>
+   <QuerySource>
+    <QueryType>Text</QueryType>
+    <TextWizardSettings>
+     <Name x:HRef="/Users/dyngs/Desktop/results_pvalues.csv"/>
+     <Source>10000</Source>
+     <Decimal>,</Decimal>
+     <ThousandSeparator> </ThousandSeparator>
+     <TrailingMinusNumbers/>
+     <FormatSettings>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+     </FormatSettings>
+     <Delimiters>
+      <Tab/>
+      <Comma/>
+     </Delimiters>
+    </TextWizardSettings>
+    <VersionLastEdit>7</VersionLastEdit>
+    <VersionLastRefresh>7</VersionLastRefresh>
+   </QuerySource>
+  </QueryTable>
+  <QueryTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>results</Name>
+   <AutoFormatFont/>
+   <AutoFormatPattern/>
+   <QuerySource>
+    <QueryType>Text</QueryType>
+    <TextWizardSettings>
+     <Name x:HRef="/Users/dyngs/Desktop/results.csv"/>
+     <Source>10000</Source>
+     <Decimal>,</Decimal>
+     <ThousandSeparator> </ThousandSeparator>
+     <TrailingMinusNumbers/>
+     <FormatSettings>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+     </FormatSettings>
+     <Delimiters>
+      <Comma/>
+     </Delimiters>
+    </TextWizardSettings>
+    <VersionLastEdit>7</VersionLastEdit>
+    <VersionLastRefresh>7</VersionLastRefresh>
+   </QuerySource>
+  </QueryTable>
+  <QueryTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>results_pvalues</Name>
+   <AutoFormatFont/>
+   <AutoFormatPattern/>
+   <QuerySource>
+    <QueryType>Text</QueryType>
+    <TextWizardSettings>
+     <Name x:HRef="/Users/dyngs/Desktop/results_pvalues.csv"/>
+     <Source>10000</Source>
+     <Decimal>,</Decimal>
+     <ThousandSeparator> </ThousandSeparator>
+     <TrailingMinusNumbers/>
+     <FormatSettings>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+      <FieldType>AutoFormat</FieldType>
+     </FormatSettings>
+     <Delimiters>
+      <Tab/>
+      <Comma/>
+     </Delimiters>
+    </TextWizardSettings>
+    <VersionLastEdit>7</VersionLastEdit>
+    <VersionLastRefresh>7</VersionLastRefresh>
+   </QuerySource>
+  </QueryTable>
+ </Worksheet>
+</Workbook>
